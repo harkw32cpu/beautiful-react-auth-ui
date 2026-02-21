@@ -1,3 +1,39 @@
+# Beautiful React Auth UI
+
+🔥 Copy-paste ready login UI templates built with React + Tailwind.
+
+🚀 Live Demo: https://your-deploy-link
+
+## ✨ Templates Included
+
+- Minimal
+- Glass
+- Split Screen
+- Dark Mode
+- Gradient Modern
+
+## ⚡ Tech Stack
+
+- React
+- TailwindCSS
+- Vite
+## ✨ Preview
+
+### Minimal
+![minimal](./preview/minimal.png)
+
+### Glass
+![glass](./preview/glass.png)
+
+### Split
+![split](./preview/split.png)
+
+### Dark
+![dark](./preview/dark.png)
+
+### Gradient
+![gradient](./preview/gradient.png)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
