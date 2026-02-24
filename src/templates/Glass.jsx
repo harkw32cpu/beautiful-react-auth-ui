@@ -2,7 +2,7 @@ export default function Glass() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-400 to-blue-500">
       <div className="backdrop-blur-lg bg-white/20 p-8 rounded-2xl shadow-2xl w-96 text-white">
-        <h2 className="text-2xl font-bold mb-6 text-center">Welcome Back</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
         <input
           type="email"
@@ -17,7 +17,7 @@ export default function Glass() {
         />
 
         <button className="w-full bg-white text-purple-600 py-2 rounded-lg hover:bg-gray-200 transition">
-          Login
+          Sign In
         </button>
       </div>
     </div>

@@ -3,7 +3,7 @@ export default function Gradient() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
       <div className="bg-white p-8 rounded-2xl shadow-2xl w-96">
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
-          Welcome Back
+          Login
         </h2>
 
         <input
@@ -19,7 +19,7 @@ export default function Gradient() {
         />
 
         <button className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-2 rounded-lg hover:opacity-90 transition">
-          Login
+          Sign In
         </button>
       </div>
     </div>

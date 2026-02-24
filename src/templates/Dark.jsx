@@ -2,7 +2,7 @@ export default function Dark() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <div className="bg-gray-800 text-white p-8 rounded-2xl shadow-2xl w-96">
-        <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
         <input
           type="email"
@@ -17,7 +17,7 @@ export default function Dark() {
         />
 
         <button className="w-full bg-indigo-600 py-2 rounded-lg hover:bg-indigo-700 transition">
-          Continue
+          Sign In
         </button>
       </div>
     </div>
