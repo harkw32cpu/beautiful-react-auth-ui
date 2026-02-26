@@ -1,11 +1,11 @@
 # Beautiful React Auth UI
-~~~~~~~~~~~~~~~~~~~~~~~~
+ 
 🔥 Copy-paste ready login UI templates built with React + Tailwind.
 
 🚀 Live Demo: https://your-deploy-link
 
 ## ✨ Templates Included
-
+To login,
 - Minimal
 - Glass
 - Split Screen
