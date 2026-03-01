@@ -1,102 +1,103 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function PerfectLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-    <div className="min-h-screen flex bg-neutral-50">
+    <div className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
 
-      {/* LEFT SIDE - Brand / Visual */}
-      <div className="hidden lg:flex w-1/2 flex-col justify-between p-16 bg-neutral-900 text-white">
-        <div>
-          <div className="w-10 h-10 rounded-xl bg-white mb-10" />
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight">
-            Welcome to your <br /> new workspace.
-          </h1>
-          <p className="mt-6 text-neutral-400 max-w-md">
-            Manage projects, collaborate with your team,
-            and scale your workflow with confidence.
-          </p>
-        </div>
-
-        <p className="text-sm text-neutral-500">
-          © 2026 YourCompany. All rights reserved.
-        </p>
+      {/* Animated Aurora Background */}
+      <div className="absolute inset-0">
+        <div className="absolute w-[800px] h-[800px] bg-purple-600/30 rounded-full blur-[160px] -top-40 -left-40 animate-pulse" />
+        <div className="absolute w-[700px] h-[700px] bg-indigo-500/30 rounded-full blur-[150px] bottom-0 right-0 animate-pulse" />
       </div>
 
-      {/* RIGHT SIDE - Login */}
-      <div className="flex flex-1 items-center justify-center px-6">
-        <form className="w-full max-w-md">
+      {/* Glass Card */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: 40 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 w-full max-w-md p-[1px] rounded-3xl bg-gradient-to-br from-purple-500 via-indigo-500 to-pink-500"
+      >
+        <div className="bg-black/70 backdrop-blur-2xl rounded-3xl p-10 text-white">
 
-          <h2 className="text-3xl font-semibold text-neutral-900 mb-2 tracking-tight">
-            Sign in
+          <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
+            Enter the Portal
           </h2>
-          <p className="text-neutral-500 mb-10">
-            Enter your details to continue
+
+          <p className="text-neutral-400 mb-10">
+            Access your digital universe
           </p>
 
           {/* Email */}
           <div className="mb-6">
-            <label className="block text-sm font-medium text-neutral-700 mb-2">
-              Email
-            </label>
             <input
               type="email"
               required
+              placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-900/20 focus:border-neutral-900 transition"
+              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/30 outline-none transition-all duration-300 placeholder:text-neutral-500"
             />
           </div>
 
           {/* Password */}
           <div className="mb-8">
-            <label className="block text-sm font-medium text-neutral-700 mb-2">
-              Password
-            </label>
             <input
               type="password"
               required
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-900/20 focus:border-neutral-900 transition"
+              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/30 outline-none transition-all duration-300 placeholder:text-neutral-500"
             />
           </div>
 
           {/* Primary Button */}
-          <button
-            type="submit"
-            className="w-full bg-neutral-900 text-white py-3 rounded-xl font-medium hover:bg-neutral-800 active:scale-[0.98] transition-all duration-200"
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="relative w-full py-3 rounded-xl font-semibold overflow-hidden bg-gradient-to-r from-purple-600 to-indigo-600"
           >
-            Continue
-          </button>
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[shimmer_2s_linear_infinite]" />
+            <span className="relative z-10">Launch Session</span>
+          </motion.button>
 
           {/* Divider */}
           <div className="flex items-center my-8">
-            <div className="flex-1 h-px bg-neutral-200" />
-            <span className="px-4 text-sm text-neutral-400">or</span>
-            <div className="flex-1 h-px bg-neutral-200" />
+            <div className="flex-1 h-px bg-white/10" />
+            <span className="px-4 text-sm text-neutral-500">or connect</span>
+            <div className="flex-1 h-px bg-white/10" />
           </div>
 
-          {/* Social Login */}
-          <button className="w-full border border-neutral-300 py-3 rounded-xl mb-4 hover:bg-neutral-100 transition">
+          {/* Social Buttons */}
+          <button className="w-full bg-white/5 border border-white/10 py-3 rounded-xl mb-4 hover:bg-white/10 transition">
             Continue with Google
           </button>
 
-          <button className="w-full border border-neutral-300 py-3 rounded-xl hover:bg-neutral-100 transition">
+          <button className="w-full bg-white/5 border border-white/10 py-3 rounded-xl hover:bg-white/10 transition">
             Continue with GitHub
           </button>
 
-          <p className="text-sm text-neutral-500 mt-10 text-center">
-            Don’t have an account?{" "}
-            <span className="text-neutral-900 font-medium hover:underline cursor-pointer">
-              Create one
+          <p className="text-sm text-neutral-400 mt-10 text-center">
+            New here?{" "}
+            <span className="text-purple-400 font-medium hover:underline cursor-pointer">
+              Create account
             </span>
           </p>
 
-        </form>
-      </div>
+        </div>
+      </motion.div>
+
+      {/* Tailwind Shimmer Keyframes */}
+      <style jsx>{`
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+      `}</style>
     </div>
   );
 }
